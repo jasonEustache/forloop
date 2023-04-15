@@ -7,7 +7,7 @@ export function getClientWithNoMoney(array) {
   let bankHolders = [];
 
   for (let i = 0; i < array.length; i++) {
-    if (array[i].name) {
+    if (array[i].balance === 0) {
       bankHolders.push(array[i].name);
     }
   }

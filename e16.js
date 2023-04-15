@@ -4,21 +4,18 @@
 // flatArrays([['d', 'r'], 'z', 'b', ['f', 'y']]) => ['d', 'r', 'z', 'b', 'f', 'y']
 // NOTE: You can NOT use the array.flat() method in your code
 
-export function concatArrays(arr1, arr2) {
-  let concat = [];
-
+export function flatArrays(arr1, arr2) {
+  let array = [];
+  let str = "";
   for (let i = 0; i < arr1.length; i++) {
-    if (arr1[i]) {
-      concat.push(arr1[i]);
+    if (arr1[i] === typeof string) {
+      str += arr1[i] + ",";
+    } else {
+      array.push(arr1[i]);
     }
   }
-
-  for (let j = 0; j < arr2.length; j++) {
-    if (arr2[j]) {
-      concat.push(arr2[j]);
-    }
-  }
-  return concat;
+  console.log(array);
+  console.log(str);
 }
 
 // === TEST YOURSELF ===
