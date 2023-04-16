@@ -4,20 +4,17 @@
 // flatArrays([['d', 'r'], 'z', 'b', ['f', 'y']]) => ['d', 'r', 'z', 'b', 'f', 'y']
 // NOTE: You can NOT use the array.flat() method in your code
 
-export function flatArrays(arr1, arr2) {
+export function flatArrays(arr1) {
   let array = [];
-  let str = "";
+
   for (let i = 0; i < arr1.length; i++) {
-    if (arr1[i] === typeof string) {
-      str += arr1[i] + ",";
-    } else {
-      array.push(arr1[i]);
+    for (let z = 0; z < arr1[i].length; z++) {
+      array.push(arr1[i][z]);
     }
   }
-  console.log(array);
-  console.log(str);
-}
 
+  return array;
+}
 // === TEST YOURSELF ===
 // Once you're finished run the test with "npm run test-16"
 // If the test has all tests passed, switch to the next exercise file
